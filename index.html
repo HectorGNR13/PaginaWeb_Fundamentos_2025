@@ -1,1 +1,42 @@
-//pagina principal
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a mi página web</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Barra de navegación (igual que en las otras páginas) -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="topic.html">Topic</a></li>
+            <li><a href="net.html">Net</a></li>
+            <li class="dropdown">
+                <a href="degree.html">Degree</a>
+                <div class="dropdown-content">
+                    <a href="fii.html">Fii</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <h1>Bienvenido a mi página web</h1>
+        <p>Héctor García de La Navarra Rodríguez</p>
+    </main>
+
+    <!-- Círculos de navegación -->
+    <div class="circles-container">
+        <a href="about.html" class="circle top-left" title="About Me">About Me</a>
+        <a href="net.html" class="circle top-right" title="Net">Net</a>
+        <a href="topic.html" class="circle bottom-left" title="Topic">Topic</a>
+        <a href="degree.html" class="circle bottom-right" title="Degree">Degree</a>
+        <a href="contact.html" class="circle center" title="Contact">Contact</a>
+    </div>
+</body>
+</html>

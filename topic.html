@@ -1,1 +1,175 @@
-// pagina para el tema a mi eleccion
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic - Mi Tema</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Contenido principal */
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+        }
+
+        .titulo-principal {
+            color: #222;
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 2.4rem;
+            border-bottom: 2px solid #555;
+            padding-bottom: 12px;
+        }
+
+        .contenido-editable {
+            font-size: 1.1rem;
+            color: #444;
+            min-height: 400px;
+            padding: 25px;
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            white-space: pre-wrap;
+        }
+
+        .contenido-editable p {
+            margin: 1.2em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="topic.html">Topic</a></li>
+            <li><a href="net.html">Net</a></li>
+            <li class="dropdown">
+                <a href="degree.html">Degree</a>
+                <div class="dropdown-content">
+                    <a href="fii.html">Fii</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="titulo-principal">Tema a elección: El Desarrollo de las criptomonedas hasta hoy</h1>
+
+        <div class="contenido-editable">
+            <h2>Los inicios de Bitcoin (2009-2011)</h2>
+
+                Desde 2009 hasta 2010, Bitcoin fue la única criptomoneda que existía en el mercado. En ese momento era un proyecto muy pequeño y bastante desconocido. En 2011, la comunidad empezó a crecer gracias a un foro creado por Satoshi Nakamoto llamado Bitcointalk.org, donde los usuarios compartían ideas, problemas y mejoras.
+
+                Durante estos primeros años aparecieron varios inconvenientes importantes, como la lentitud en los micropagos, la centralización de la minería en pocas manos y, sobre todo, la desaparición de Satoshi Nakamoto. Esto último generó muchas dudas, pero también motivó a otros desarrolladores a intentar mejorar la idea original de Bitcoin.
+
+                Uno de ellos fue Charlie Lee, quien decidió crear Litecoin, una versión más rápida y ligera de Bitcoin. También surgieron otras criptomonedas como Namecoin, creada por Vincent Durham, dando inicio a lo que hoy conocemos como el ecosistema cripto.
+
+            <h2>El caso Mt. Gox y la caída de la confianza</h2>
+
+                Mark Karpeles fue un programador autodidacta, sin experiencia financiera, que llegó a ser director ejecutivo de Mt. Gox, la mayor plataforma de intercambio de bitcoins en ese momento. Su falta de preparación provocó errores muy graves, como guardar claves privadas en un archivo de Excel, usar código obsoleto y mentir sobre transacciones para ocultar robos.
+
+                El 7 de febrero de 2014, Mt. Gox congeló todos los retiros debido a supuestos problemas técnicos, lo que terminó provocando su colapso. Esto llevó a la renuncia de Karpeles y a la quiebra de la empresa en Japón. Más tarde se encontró una wallet con unos 200.000 bitcoins, y Karpeles fue condenado a dos años y medio de prisión por manipulación de datos.
+
+                Como consecuencia, el precio del Bitcoin cayó de unos 900 dólares a apenas 200 dólares, y la confianza en las criptomonedas se vio muy afectada.
+
+            <h2>El nacimiento de Ethereum y las ICOs</h2>
+
+                Tras esta gran caída, surgió Ethereum, una plataforma descentralizada y de código abierto que aportó algo totalmente nuevo: los contratos inteligentes. Ethereum creó su propia moneda, ETH, que se utiliza para pagar las comisiones de transacción conocidas como “gas”.
+
+                Entre 2016 y 2017, Ethereum ganó muchísima relevancia y llegó a establecer alianzas con grandes empresas como Microsoft, JPMorgan e Intel. Esto impulsó de nuevo el mercado cripto y llevó al Bitcoin a alcanzar, en ese momento, su máximo histórico de 19.666 dólares.
+
+                En esos años también aparecieron muchas ICOs (Ofertas Iniciales de Monedas). El problema fue que alrededor del 90% resultaron ser estafas, lo que obligó a crear regulaciones más estrictas. En este contexto empezó a intervenir la SEC como organismo regulador.
+
+            <h2>El “Crypto Winter” y la construcción de bases sólidas (2018-2020)</h2>
+
+                Entre 2018 y 2020 se vivió lo que se conoce como el Crypto Winter. Tras el pico de casi 20.000 dólares, el mercado se desplomó alrededor de un 85%. Mucha gente dejó de minar y se llegó a pensar que las criptomonedas habían muerto.
+
+                Sin embargo, Bitcoin reapareció con fuerza gracias a la Lightning Network, que permitió realizar transacciones casi instantáneas y con comisiones muy bajas. Esto hizo posible que Bitcoin empezara a usarse como medio de pago real en países como El Salvador, en comercios de Suiza y en aplicaciones de micropagos en África.
+
+                Además, surgió el concepto de DeFi (Finanzas Descentralizadas), permitiendo que cualquier persona con una wallet pudiera acceder a servicios financieros sin bancos, mediante protocolos como MakerDAO, Compound y Uniswap. Las criptomonedas dejaron de verse solo como especulación y comenzaron a construir una infraestructura real, lo que llevó a Bitcoin a alcanzar los 70.000 dólares.
+
+            <h2>De 2021 hasta la actualidad: adopción y regulación</h2>
+
+                Desde 2021 hasta hoy, la adopción institucional ha sido clave. Tesla invirtió 1.500 millones de dólares en Bitcoin, lo que impulsó aún más su valor. Por otro lado, MicroStrategy, una empresa de software de inteligencia empresarial, llegó a acumular más de 250.000 bitcoins en su tesorería, demostrando que las criptomonedas ya son consideradas un activo serio.
+
+                Cada vez más países empezaron a aceptar pagos con Bitcoin, lo que hizo necesaria una mayor regulación. En la Unión Europea se creó la normativa MiCA, con más de 40 licencias, criptomonedas estables reguladas y un aumento del 24% en el volumen de trading.
+
+                En Estados Unidos, incluso Donald Trump propuso la idea de reservar bitcoins, lo que reforzó la percepción de seguridad y confianza en esta criptomoneda. Todo esto confirma que las criptomonedas ya forman parte del sistema financiero global.
+        </div>
+    </main>
+
+</body>
+</html>

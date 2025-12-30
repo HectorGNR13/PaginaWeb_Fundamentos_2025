@@ -1,1 +1,258 @@
-// pagina especifica del grado de fundamentos
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FII - Fundamentos de Ingeniería Informática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Contenido principal */
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #222;
+            text-align: center;
+            margin-bottom: 35px;
+            border-bottom: 2px solid #555;
+            padding-bottom: 12px;
+        }
+
+        h2 {
+            color: #444;
+            margin: 40px 0 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            main {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="topic.html">Topic</a></li>
+            <li><a href="net.html">Net</a></li>
+            <li class="dropdown">
+                <a href="degree.html">Degree</a>
+                <div class="dropdown-content">
+                    <a href="fii.html">Fii</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Fundamentos de Ingeniería Informática (FII)</h1>
+        
+        <p>En esta página se describe más en profundidad la asignatura de Fundamentos de Ingeniería Informática. Donde se van a tocar estos aspectos acerca de la asignatura:
+
+        </p>
+        <p>-Sobre el profesor</p>
+        <p>-Datos de identificación</p>
+        <p>-¿Qué es un Ingeniero en Informática?</p>
+        <p>-Descripción de la asignatura</p>
+        <p>-Objetivos</p>
+        <p>-Contenidos</p>
+        <p>-Actividades</p>
+        <p>-Conocimientos y habilidades</p>
+        <p>-Resultados de aprendizaje</p>
+        <p>-Modelo de evaluación</p>
+        
+
+        <div class="image-container">
+            <img src="https://ep.jhu.edu/wp-content/uploads/2025/03/compscivscompeng-300x200.jpg" alt="Ilustración de fundamentos de ingeniería informática">
+        </div>
+
+        <h2>Sobre el Profesor</h2>
+        <p>Héctor Molina García<br>
+        Email: h.molina@ufv.es<br>
+        LinkedIn: <a href="https://www.linkedin.com/in/hectormolinagarcia">www.linkedin.com/in/hectormolinagarcia</a></p>
+
+        <h2>Datos de Identificación</h2>
+        <p>Titulación: Grado en Ingeniería Informática<br>
+        Rama de Conocimiento: Ingeniería y Arquitectura<br>
+        Facultad/Escuela: Escuela Politécnica Superior</p>
+
+        <h2>¿Qué es un Ingeniero en Informática?</h2>
+        <p>El individuo que concibe y formula hábilmente métodos o vías para realizar tareas puede describirse como solucionadores de problemas ingeniosos.</p>
+        <p>Individuo que posee una base de conocimientos integral que abarca dominios científicos y tecnológicos, tales como: Invención, Innovación, Creación de herramientas, Mejora de herramientas.</p>
+        <p>Persona que posee una competencia en disciplinas como Matemáticas, Física, Química y Programación de Computadoras.</p>
+        <p>La ingeniería se ocupa fundamentalmente del esfuerzo por traducir el conocimiento teórico en resultados pragmáticos y tangibles.</p>
+
+        <div class="image-container">
+            <img src="https://www.spiceworks.com/wp-content/uploads/2023/05/components-of-computer-architecture.png" alt="Componentes de arquitectura de computadores">
+        </div>
+
+        <h2>Descripción de la Asignatura</h2>
+        <p>El objetivo principal del curso "Fundamentos de Ingeniería Informática" es proporcionar una comprensión integral de la Ingeniería Informática desde una perspectiva global, que abarca tanto las dimensiones académicas como profesionales. Este curso está diseñado para equipar a los estudiantes con conocimientos fundamentales arraigados en disciplinas como las matemáticas, la física, la antropología y la ética.</p>
+        <p>Además, tiene como objetivo dilucidar las posibles trayectorias profesionales en el campo y dilucidar el papel fundamental desempeñado por los ingenieros informáticos en la sociedad contemporánea.</p>
+        <p>Se espera que los estudiantes dediquen un total de 150 horas de trabajo a este curso. Se divide en dos componentes distintos: Fundamentos teóricos y Habilidades prácticas - Introducción al desarrollo web.</p>
+
+        <h2>Objetivos</h2>
+        <ul>
+            <li>Comprender el propósito de la Ingeniería Informática, su objetivo final y los beneficios sociales que proporciona, al tiempo que reflexiona sobre el papel que cada individuo desea desempeñar como ingeniero en la sociedad futura.</li>
+            <li>Conocer los pilares sobre los que debe basarse el progreso tecnológico, incluyendo una perspectiva histórica sobre el desarrollo tecnológico.</li>
+            <li>Reconocer la importancia del factor humano en la práctica profesional y fomentar el sentido de servicio y contribución al bien común.</li>
+            <li>Tener una visión global del campo de estudio, sus diversas áreas de conocimiento, y distinguir trayectorias profesionales y perfiles profesionales para cuestionar la propia vocación.</li>
+            <li>Proporcionar conocimientos sobre paradigmas actuales, tendencias en computación, gestión de datos e introducción al desarrollo web.</li>
+        </ul>
+
+        <div class="image-container">
+            <img src="https://www.cs.uah.edu/~rcoleman/Common/History/Images/Pic51_DataStorage.jpg" alt="Historia de la computación">
+        </div>
+
+        <h2>Contenidos</h2>
+        <h3>Parte I: Fundamentos Teóricos</h3>
+        <ul>
+            <li>Bloque 1: La ingeniería Informática en la Sociedad. Antecedentes y perspectivas histórica. Definiciones y conceptos básicos. Pasado, presente y futuro de las TIC. La Ingeniería Informática como disciplina académica y profesión. Competencias y conocimientos necesarios para el ingeniero informático. Salidas profesionales. El sentido de la ética en la formación del ingeniero informático. Códigos deontológicos.</li>
+            <li>Bloque 2: Paradigmas actuales y tendencias de los sistemas y las aplicaciones. Desarrollo de software: algo más que programación. Estructura de los sistemas informáticos: hardware, software y redes. Nuevos paradigmas y tendencias: computación en la nube, computación cuántica, computación cognitiva, blockchain, smart cities, IoT...</li>
+            <li>Bloque 3: La información y los datos. Representación de información en formato digital: sistemas de numeración, representación de información numérica y alfanumérica (códigos). Organización de los datos. Modelos de datos. Retos del Big Data. Protección de datos.</li>
+        </ul>
+        <h3>Parte II: Habilidades Prácticas: Introducción al Desarrollo Web</h3>
+        <ul>
+            <li>Bloque 1: Introducción y manejo de repositorios de SW.</li>
+            <li>Bloque 2: Creación de páginas Web HTML5. Conceptos básicos. Etiquetas. Organización de la información y maquetación con CSS3.</li>
+            <li>Bloque 3: Diseño y maquetación con CSS3. Conceptos básicos. Selectores. Modelo de caja. Posicionamiento de elementos.</li>
+        </ul>
+
+        <div class="image-container">
+            <img src="https://media.licdn.com/dms/image/v2/D4E12AQGVntFfzkzLDw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1705508470503?e=2147483647&v=beta&t=sfJP_9hzFY08xnLwj2XyitNtH_iS9qYj0NV8BFtwxoU" alt="Desarrollo web con HTML y CSS">
+        </div>
+
+        <h2>Actividades</h2>
+        <p>Las actividades presenciales tienen un fuerte componente práctico para mejorar el aprendizaje de los estudiantes. Incluyen: Clases teóricas, Clases prácticas, Presentaciones de trabajo, Talleres, Tutoriales.</p>
+        <p>Se utilizará una plataforma de aprendizaje en línea llamada Aula Virtual para facilitar el acceso a los materiales, la planificación del trabajo, así como la comunicación con el profesor y otros estudiantes.</p>
+
+        <h2>Conocimientos y Habilidades</h2>
+        <h3>Conocimientos Básicos</h3>
+        <ul>
+            <li>Los estudiantes deben haber demostrado conocimiento y comprensión en un área de estudio que se basa en la educación secundaria general...</li>
+            
+        </ul>
+        <h3>Conocimientos Generales</h3>
+        <ul>
+            <li>Capacidad para concebir, desarrollar y mantener sistemas, servicios y aplicaciones informáticas...</li>
+        </ul>
+        <h3>Habilidades Específicas</h3>
+        <ul>
+            <li>Conocimientos básicos sobre el uso y programación de ordenadores...</li>
+        </ul>
+
+        <h2>Resultados de Aprendizaje</h2>
+        <ul>
+            <li>Reconocer y emplear, en una explicación o discurso, la terminología...</li>
+        </ul>
+
+        <h2>Modelo de Evaluación</h2>
+        <p>Convocatoria Ordinaria: Pruebas escritas (50%), Proyectos (40%), Actividades diarias (10%). Mínimo 5 en cada parte.</p>
+        <p>Convocatoria Extraordinaria: Examen final y recuperación de prácticas.</p>
+        <p>Plagio: Sancionado según normativa universitaria.</p>
+
+       
+    </main>
+
+</body>
+</html>

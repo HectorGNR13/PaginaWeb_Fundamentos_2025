@@ -1,1 +1,264 @@
-// descripcion detallada del grado
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degree - 1º Ingeniería Informática UFV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #222;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #555;
+            padding-bottom: 12px;
+        }
+
+        h2 {
+            color: #444;
+            text-align: center;
+            margin: 50px 0 30px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 8px;
+        }
+
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .subject-card {
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+        }
+
+        .subject-card h3 a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .subject-card h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .subject-card p {
+            margin: 0;
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .note {
+            text-align: center;
+            color: #777;
+            margin-top: 60px;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            main { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="topic.html">Topic</a></li>
+            <li><a href="net.html">Net</a></li>
+            <li class="dropdown">
+                <a href="degree.html">Degree</a>
+                <div class="dropdown-content">
+                    <a href="fii.html">Fii</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>1º Curso - Grado en Ingeniería Informática (UFV)</h1>
+        
+        <p style="text-align: center; color: #666; margin-bottom: 40px;">
+            Estas son las asignaturas que se cursan en primero de Ingeniería Informática en la Universidad Francisco de Vitoria con la modalidad de Ciberseguridad.
+        </p>
+
+        <!-- PRIMER CUATRIMESTRE -->
+        <h2>Primer Cuatrimestre</h2>
+        <div class="subjects-grid">
+
+            <div class="subject-card">
+                <h3>Matemática Discreta</h3>
+                <p>Lógica, teoría de conjuntos, relaciones, funciones, grafos, combinatoria y estructuras discretas aplicadas a la informática.</p>
+            </div>
+
+            <div class="subject-card">
+                <h3>Introducción a la Programación</h3>
+                <p>Conceptos básicos de programación: algoritmos, variables, estructuras de control, funciones y resolución de problemas sencillos (normalmente en C).</p>
+            </div>
+
+            <div class="subject-card">
+                <h3><a href="fii.html">Fundamentos de Ingeniería Informática</a></h3>
+                <p>Visión general de la informática: historia, arquitectura básica de computadores, sistemas numéricos y representación de datos.</p>
+            </div>
+
+            <div class="subject-card">
+                <h3>Lógica y Pensamiento Crítico</h3>
+                <p>Razonamiento lógico, argumentación, falacias y desarrollo del pensamiento crítico aplicado a contextos técnicos y científicos.</p>
+            </div>
+
+            <div class="subject-card">
+                <h3>Matemáticas para la Ingeniería</h3>
+                <p>Análisis matemático básico: límites, derivadas, integrales y aplicaciones en problemas de ingeniería.</p>
+            </div>
+
+            <!-- Asignaturas de Ciberseguridad en 1º Cuatrimestre -->
+            <div class="subject-card">
+                <h3>Introducción a la Ciberseguridad</h3>
+                <p>Conceptos fundamentales de seguridad informática, amenazas principales, protección básica de datos y introducción a la ciberdefensa.</p>
+            </div>
+
+            <div class="subject-card">
+                <h3>Administración de Sistemas Operativos I</h3>
+                <p>Principios de administración de sistemas operativos: instalación, configuración básica, gestión de usuarios y permisos (enfoque introductorio).</p>
+            </div>
+
+        </div>
+
+        <!-- SEGUNDO CUATRIMESTRE -->
+        <h2>Segundo Cuatrimestre</h2>
+        <div class="subjects-grid">
+
+            <div class="subject-card">
+                <h3>Matemáticas para la Ingeniería II</h3>
+                <p>Continuación del análisis matemático: ecuaciones diferenciales, series, funciones multivariables y aplicaciones avanzadas.</p>
+            </div>
+
+            <div class="subject-card">
+                <h3>La Empresa y sus Procesos</h3>
+                <p>Introducción a la organización empresarial, procesos de negocio, modelos organizativos y su relación con la tecnología.</p>
+            </div>
+
+            <div class="subject-card">
+                <h3>Gestión del Conocimiento y Habilidades de la Persona</h3>
+                <p>Inteligencia emocional, gestión del tiempo, trabajo en equipo, comunicación efectiva y habilidades personales (incluye mentorías).</p>
+            </div>
+
+            <div class="subject-card">
+                <h3>Electrónica y Tecnología de Computadores</h3>
+                <p>Electrónica digital, puertas lógicas, circuitos básicos, tecnología de computadores y componentes de hardware.</p>
+            </div>
+
+            <div class="subject-card">
+                <h3>Programación Orientada a Objetos</h3>
+                <p>Paradigma de programación orientada a objetos: clases, objetos, herencia, polimorfismo, encapsulación y diseño de software.</p>
+            </div>
+
+            <div class="subject-card">
+                <h3>Historia de la Ciencia y Tecnología</h3>
+                <p>Evolución histórica de la ciencia y la tecnología, hitos clave y su impacto en la sociedad actual.</p>
+            </div>
+
+            <!-- Asignatura de Ciberseguridad en 2º Cuatrimestre -->
+            <div class="subject-card">
+                <h3>Administración de Sistemas Operativos II</h3>
+                <p>Administración avanzada de sistemas operativos: scripting, seguridad, redes básicas, monitoreo y mantenimiento (continuación de ASO I).</p>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

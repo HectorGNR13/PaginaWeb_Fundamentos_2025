@@ -1,1 +1,181 @@
-// pagina para los enlaces a otras paginas
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Contenedor genérico */
+        .section-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin-bottom: 60px;
+        }
+
+        .text-side {
+            flex: 1;
+            min-width: 320px;
+        }
+
+        .image-side {
+            flex: 1;
+            min-width: 320px;
+        }
+
+        .image-side img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            object-fit: cover;
+        }
+
+        h2 {
+            color: #222;
+            margin-top: 0;
+            border-bottom: 2px solid #555;
+            padding-bottom: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .section-container {
+                flex-direction: column;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="topic.html">Topic</a></li>
+            <li><a href="net.html">Net</a></li>
+            <li class="dropdown">
+                <a href="degree.html">Degree</a>
+                <div class="dropdown-content">
+                    <a href="fii.html">Fii</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="section-container">
+            <div class="text-side">
+                <h2>Página de Adrian David Brad</h2>
+                <p>
+                    Enlace para la pagina de mi compañero Adrian David Brad: <a href="https://brad-david-adrian.github.io/Fundamentos-Web-2/Html/about.html">Página</a>
+                </p>
+                
+            </div>
+
+            <div class="image-side">
+                <img src="https://brad-david-adrian.github.io/Fundamentos-Web-2/Images/images%20(1).jpg" 
+                    >
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="text-side">
+                <h2>Universidad Francisco de Vitoria</h2>
+                
+                <p>
+                    Enlace para la Universidad Francisco de Vitoria: <a href="https://www.ufv.es/">UFV</a>  
+                </p>
+                
+            </div>
+
+            <div class="image-side">
+                <img src="data:image/png;base64,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" 
+                    >
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
